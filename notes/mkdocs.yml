@@ -1,4 +1,7 @@
 site_name: 8SOAT - FIAP
+plugins:
+  - search
+  - mermaid2
 nav:
   - Início: index.md
   - Conteúdos:

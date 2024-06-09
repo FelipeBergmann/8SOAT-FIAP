@@ -12,6 +12,9 @@ Para rodar o projeto é necessário ter instalado o mkdocs. O método de instala
 
 `pip install mkdocs`
 
+por hora, para realizar o deploy de uma nova versão é necessário rodar:
+`mkdocs build` para gerar os arquivos estáticos do site que serão publicados.
+
 Para outros comandos
 * `mkdocs serve` - Inicia o serviço localmente (com live-reloading).
 * 

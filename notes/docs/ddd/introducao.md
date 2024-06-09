@@ -76,8 +76,15 @@ Apoia o negócio da empresa, esse não da nenhuma vantagem estratégica para o n
 
 Apesar de não existir uma regra geral, podemos seguir um fluxo generalista para nos auxiliar a separar os subdomínios.
 
-![workflow para identificar um subdomínio](images/_identify_subdomains.jpg)
-
+---
+```mermaid
+flowchart TB
+    A{A solução pode ser comprada?}-->|Sim| B{Pode arriscar o negócio?}-->|Sim| D[Subdomínio Principal]
+    A-->|Não| C{A lógica de negócio é complexa?}-->|Sim| D[Subdomínio Principal]
+    B-->|Não| E[Subdomínio Genérico]
+    C-->|Não| F[Subdomínio de Suporte]
+```
+----
 
 ## _E quem nos ensina sobre os subdomínios?
 
