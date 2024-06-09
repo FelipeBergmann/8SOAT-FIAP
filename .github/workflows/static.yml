@@ -34,14 +34,14 @@ jobs:
         run: pip install mkdocs
       
       - name: Build Site
-        run: mkdocs build
+        run: mkdocs build -d app/site
         working-directory: ./notes
 
       - name: Upload artifact
         uses: actions/upload-artifact@v3
         with:
-          name: site
-          path: /notes/site
+          name: static_site
+          path: /notes/app/site
 
   deploy:
     environment:
@@ -55,8 +55,8 @@ jobs:
       - name: Download artifact
         uses: actions/download-artifact@v3
         with:
-          name: site
-          path: ./site
+          name: static_site
+          path: app/site
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -64,7 +64,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          publish_dir: ./site
+          publish_dir: app/site
 
       - name: Deploy to GitHub Pages
         id: deployment
