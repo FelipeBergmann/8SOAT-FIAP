@@ -1,0 +1,6 @@
+site_name: 8SOAT - FIAP
+nav:
+  - Início: index.md
+  - Conteúdos:
+    - Domain Driven Design: ./ddd/index.md
+  - Sobre: about.md
