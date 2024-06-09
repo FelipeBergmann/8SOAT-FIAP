@@ -41,7 +41,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: site
-          path: ./static/site
+          path: ./site
 
   deploy:
     environment:
@@ -56,7 +56,7 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: site
-          path: ./static/site
+          path: ./site
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -64,7 +64,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          publish_dir: ./static/site
+          publish_dir: ./site
 
       - name: Deploy to GitHub Pages
         id: deployment
