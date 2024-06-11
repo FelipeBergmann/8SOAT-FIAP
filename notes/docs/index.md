@@ -25,6 +25,7 @@ Deixamos este espaço para a indicação de livros que achamos essenciais na jor
 | Título | Autor | Sugestão de compra |
 | ------ |------ | ------------------ |
 | Learning Domain-Driven Design | Vlad Khononov | [amazon](https://a.co/d/5BvaUyZ)|
+| Writing Effective Use Cases | Alistair Cockburn | |
 
 ## Como contribuir?
 

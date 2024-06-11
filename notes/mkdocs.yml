@@ -6,4 +6,6 @@ nav:
   - Início: index.md
   - Conteúdos:
     - Domain Driven Design: ./ddd/index.md
+  - Ferramentas:
+    - Indicações de Ferramentas: ./tools/index.md
   - Sobre: about.md
