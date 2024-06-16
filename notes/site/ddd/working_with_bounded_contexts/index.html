@@ -4,23 +4,23 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="None">
         
         
-        <link rel="shortcut icon" href="img/favicon.ico">
-        <title>8SOAT - FIAP</title>
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/font-awesome.min.css" rel="stylesheet">
-        <link href="css/base.css" rel="stylesheet">
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Trabalhando com Contextos Delimitados - 8SOAT - FIAP</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
         <script>hljs.highlightAll();</script> 
     </head>
 
-    <body class="homepage">
+    <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href=".">8SOAT - FIAP</a>
+                <a class="navbar-brand" href="../..">8SOAT - FIAP</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
@@ -30,15 +30,15 @@
                 <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
-                            <li class="navitem active">
-                                <a href="." class="nav-link">Início</a>
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">Início</a>
                             </li>
                             <li class="dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Conteúdos <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="ddd/" class="dropdown-item">Domain Driven Design</a>
+    <a href="../" class="dropdown-item">Domain Driven Design</a>
 </li>
                                 </ul>
                             </li>
@@ -47,12 +47,12 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="tools/" class="dropdown-item">Indicações de Ferramentas</a>
+    <a href="../../tools/" class="dropdown-item">Indicações de Ferramentas</a>
 </li>
                                 </ul>
                             </li>
                             <li class="navitem">
-                                <a href="about/" class="nav-link">Sobre</a>
+                                <a href="../../about/" class="nav-link">Sobre</a>
                             </li>
                         </ul>
 
@@ -62,16 +62,6 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
-                            <li class="nav-item">
-                                <a rel="prev" class="nav-link disabled">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a rel="next" href="ddd/" class="nav-link">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
                     </ul>
                 </div>
             </div>
@@ -90,17 +80,29 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#cheguei-cade-os-aplausos" class="nav-link">Cheguei, cadê os aplausos?</a>
+            <li class="nav-item" data-level="1"><a href="#trabalhando-com-contextos-delimitados" class="nav-link">Trabalhando com Contextos Delimitados</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#indicacoes-de-livros" class="nav-link">Indicações de Livros</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#como-contribuir" class="nav-link">Como contribuir?</a>
+            <li class="nav-item" data-level="2"><a href="#cooperacao" class="nav-link">Cooperação</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#para-onde-ir-agora" class="nav-link">Para onde ir agora?</a>
+            <li class="nav-item" data-level="2"><a href="#modelo-de-parceria" class="nav-link">Modelo de Parceria</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#kernel-compartilhado" class="nav-link">Kernel Compartilhado</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#modelo-cliente-fornecedor" class="nav-link">Modelo Cliente Fornecedor</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#modelo-grande-bola-de-lama-bbm" class="nav-link">Modelo Grande Bola de Lama (BBM)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#mapa-de-contexto" class="nav-link">Mapa de Contexto</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -111,46 +113,59 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="cheguei-cade-os-aplausos">Cheguei, cadê os aplausos?</h1>
-<p>Bem-vindo ao Repositório da <strong>8SOAT</strong> - Pós Tech de Arquitetura de Software na FIAP</p>
-<p>Este espaço foi criado com o objetivo de facilitar o compartilhamento de conhecimento, anotações e referências úteis para todos os colegas de turma.</p>
-<p>Aqui você encontrará:</p>
-<p><strong>Anotações de Aula:</strong> Resumos e pontos importantes discutidos em nossas aulas.</p>
-<p><strong>Indicações de Livros:</strong> Sugestões de leitura que complementam nosso aprendizado.</p>
-<p><strong>Artigos e Publicações:</strong> Artigos acadêmicos e publicações relevantes sobre arquitetura de software.</p>
-<p><strong>Ferramentas Úteis:</strong> Recomendações de ferramentas e software que podem auxiliar no desenvolvimento e análise de arquiteturas.</p>
-<p><strong>Links Interessantes:</strong> Links para blogs, vídeos e outros recursos online que valem a pena conferir.</p>
-<p>Nosso objetivo é criar um ambiente colaborativo onde todos possam contribuir e aprender juntos. Se você tiver anotações, sugestões de livros, artigos ou qualquer outro material que possa ser útil, sinta-se à vontade para compartilhar!</p>
-<h2 id="indicacoes-de-livros">Indicações de Livros</h2>
-<p>Deixamos este espaço para a indicação de livros que achamos essenciais na jornada da pessoa arquiteta de software:</p>
-<table>
-<thead>
-<tr>
-<th>Título</th>
-<th>Autor</th>
-<th>Sugestão de compra</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Learning Domain-Driven Design</td>
-<td>Vlad Khononov</td>
-<td><a href="https://a.co/d/5BvaUyZ">amazon</a></td>
-</tr>
-<tr>
-<td>Writing Effective Use Cases</td>
-<td>Alistair Cockburn</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="como-contribuir">Como contribuir?</h2>
-<p>Este é um espaço colaborativo, então encorajamos todos a contribuir! Você pode adicionar suas anotações, sugestões de leitura, links interessantes e qualquer outro recurso que achar relevante. Juntos, podemos criar uma base de conhecimento rica e diversificada.</p>
-<p>Envie um Pull Request no <a href="https://github.com/FelipeBergmann/8SOAT-FIAP">repositório deste projeto</a></p>
-<p>Esperamos que este repositório seja útil para todos e que possamos aproveitar ao máximo esta jornada de aprendizado!</p>
-<p>Bons estudos a todos!</p>
-<h2 id="para-onde-ir-agora">Para onde ir agora?</h2>
-<h5 id="domain-driven-design"><a href="ddd/">Domain Driven Design</a></h5></div>
+<h1 id="trabalhando-com-contextos-delimitados">Trabalhando com Contextos Delimitados</h1>
+<h2 id="cooperacao">Cooperação</h2>
+<ul>
+<li>Cada contexto é feito por um time;</li>
+<li>Requer disciplina de comunicação</li>
+</ul>
+<h2 id="modelo-de-parceria">Modelo de Parceria</h2>
+<ul>
+<li>Os times conversam e combinam as integrações entre eles, tudo de forma negociada.</li>
+</ul>
+<h2 id="kernel-compartilhado">Kernel Compartilhado</h2>
+<ul>
+<li>Contexto compartilhado, que é o Kernel.</li>
+<li>Ex: CRM que é mantido pelo mesmo time, onde os dois colaboram no mesmo código.</li>
+<li>Este modelo é a exceção</li>
+<li>:Warning: Tomar cuidado para não criar duplicação de código</li>
+</ul>
+<h2 id="modelo-cliente-fornecedor">Modelo Cliente Fornecedor</h2>
+<ul>
+<li>Contextos dos times desenvolvidos separadamente;</li>
+<li>Há alguma dependência por conta de algum serviço</li>
+<li>Os times têm o poder de decidir como querem integrar</li>
+<li>Fornecedor (upstream) é o time que provê o serviço</li>
+<li>Cliente (downstream) é o time que o consome</li>
+<li>Conformista: temos que nos conformar com o formato que o fornecedor disponibiliza e adequar à nossa solução</li>
+</ul>
+<h3 id="camada-anti-corrupcao-acl">Camada Anti Corrupção (ACL)</h3>
+<p>No DDD pensamos nesta camada como uma barreira para proteger o cliente das alterações do fornecedor. Então, ela fica entre a integração cliente e serviço do fornecedor, fazendo a tradução do que o fornecedor entrega para o cliente. Mantendo um único ponto de alteração caso o fornecedor imponha alguma mudança, assim, o cliente não é afetado.</p>
+<h3 id="servico-de-host-aberto-ohs">Serviço de Host Aberto (OHS)</h3>
+<p>É uma interface disponibilizada pelo fornecedor de integração para expor os serviços para o cliente não precise se adequar, assim o cliente pode se integrar com uma camada padronizada.
+Isto ajuda o fornecedor a separar os seus desenvolvimentos mais internos dos clientes, assim ele pode evoluir os serviços sem se preocupar em quebrar o cliente.</p>
+<h3 id="linguagem-publicada-pl">Linguagem Publicada (PL)</h3>
+<p>No OHS a linguagem é do fornecedor, neste caso o fornecedor cria instâncias customizadas para o cliente utilizando a linguagem que o cliente usa.</p>
+<h3 id="caminhos-separados">Caminhos Separados</h3>
+<p>Para times que não conseguem se entender ou se comunicar, como no modelo parceria, neste cenário os times não se integram. Outros motivos:
+- Custo de integração é muito maior que o de criar uma solução interna
+- Não tem sentido expor o serviço a outros contextos</p>
+<h2 id="modelo-grande-bola-de-lama-bbm">Modelo Grande Bola de Lama (BBM)</h2>
+<p>Este modelo (Big Ball of Mud) é indicado para sistemas muito grandes e que não tem contextos bem definidos e são inconsistentes. Acontece muito em sistemas legados.
+As recomendações são:
+- Desenhe uma linha em torno e chame de Grande Bola de Lama;
+- Não tente aplicar nenhum método sofisticado de modelagem;
+- Cuidado, pois esta bola de lama pode contaminar outros contextos.</p>
+<h2 id="mapa-de-contexto">Mapa de Contexto</h2>
+<p>É um mapa que materializa visualmente todos os nossos contextos delimitados e como eles se integram. Desta forma, temos uma visão estratégica do todo.
+O mapa conterá:</p>
+<ul>
+<li>Contextos delimitados</li>
+<li>Times</li>
+<li>Como os contextos se relacionam</li>
+<li>Camadas de: Serviços, ACL, OHS, PL, Fornecedores (upstream) e clientes (downstream)</li>
+</ul>
+<p><strong>Esta documentação é viva, sempre será atualizada.</strong></p></div>
             </div>
         </div>
 
@@ -158,14 +173,14 @@
             <hr>
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
-        <script src="js/jquery-3.6.0.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+        <script src="../../js/jquery-3.6.0.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
         <script>
-            var base_url = ".",
+            var base_url = "../..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="js/base.js"></script>
-        <script src="search/main.js"></script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/main.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -230,8 +245,3 @@
 
     </body>
 </html>
-
-<!--
-MkDocs version : 1.5.3
-Build Date UTC : 2024-06-16 20:27:18.947581+00:00
--->
