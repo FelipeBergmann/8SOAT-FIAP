@@ -4,23 +4,23 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="None">
         
         
-        <link rel="shortcut icon" href="img/favicon.ico">
-        <title>8SOAT - FIAP</title>
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/font-awesome.min.css" rel="stylesheet">
-        <link href="css/base.css" rel="stylesheet">
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Definition of Ready e Definition of Done - 8SOAT - FIAP</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
         <script>hljs.highlightAll();</script> 
     </head>
 
-    <body class="homepage">
+    <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href=".">8SOAT - FIAP</a>
+                <a class="navbar-brand" href="../..">8SOAT - FIAP</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
@@ -30,15 +30,15 @@
                 <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
-                            <li class="navitem active">
-                                <a href="." class="nav-link">Início</a>
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">Início</a>
                             </li>
                             <li class="dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Conteúdos <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="ddd/" class="dropdown-item">Domain Driven Design</a>
+    <a href="../" class="dropdown-item">Domain Driven Design</a>
 </li>
                                 </ul>
                             </li>
@@ -47,12 +47,12 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="tools/" class="dropdown-item">Indicações de Ferramentas</a>
+    <a href="../../tools/" class="dropdown-item">Indicações de Ferramentas</a>
 </li>
                                 </ul>
                             </li>
                             <li class="navitem">
-                                <a href="about/" class="nav-link">Sobre</a>
+                                <a href="../../about/" class="nav-link">Sobre</a>
                             </li>
                         </ul>
 
@@ -62,16 +62,6 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
-                            <li class="nav-item">
-                                <a rel="prev" class="nav-link disabled">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a rel="next" href="ddd/" class="nav-link">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
                     </ul>
                 </div>
             </div>
@@ -90,17 +80,21 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#cheguei-cade-os-aplausos" class="nav-link">Cheguei, cadê os aplausos?</a>
+            <li class="nav-item" data-level="1"><a href="#definition-of-ready-e-definition-of-done" class="nav-link">Definition of Ready e Definition of Done</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#indicacoes-de-livros" class="nav-link">Indicações de Livros</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#como-contribuir" class="nav-link">Como contribuir?</a>
+            <li class="nav-item" data-level="2"><a href="#definition-of-ready-upstream" class="nav-link">Definition of Ready (upstream)</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#para-onde-ir-agora" class="nav-link">Para onde ir agora?</a>
+            <li class="nav-item" data-level="2"><a href="#definition-of-done-downstream" class="nav-link">Definition of Done (downstream)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#estimativa-usando-fibonacci" class="nav-link">Estimativa usando Fibonacci</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#estimativa-usando-monte-carlo" class="nav-link">Estimativa usando Monte Carlo</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -111,51 +105,34 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="cheguei-cade-os-aplausos">Cheguei, cadê os aplausos?</h1>
-<p>Bem-vindo ao Repositório da <strong>8SOAT</strong> - Pós Tech de Arquitetura de Software na FIAP</p>
-<p>Este espaço foi criado com o objetivo de facilitar o compartilhamento de conhecimento, anotações e referências úteis para todos os colegas de turma.</p>
-<p>Aqui você encontrará:</p>
-<p><strong>Anotações de Aula:</strong> Resumos e pontos importantes discutidos em nossas aulas.</p>
-<p><strong>Indicações de Livros:</strong> Sugestões de leitura que complementam nosso aprendizado.</p>
-<p><strong>Artigos e Publicações:</strong> Artigos acadêmicos e publicações relevantes sobre arquitetura de software.</p>
-<p><strong>Ferramentas Úteis:</strong> Recomendações de ferramentas e software que podem auxiliar no desenvolvimento e análise de arquiteturas.</p>
-<p><strong>Links Interessantes:</strong> Links para blogs, vídeos e outros recursos online que valem a pena conferir.</p>
-<p>Nosso objetivo é criar um ambiente colaborativo onde todos possam contribuir e aprender juntos. Se você tiver anotações, sugestões de livros, artigos ou qualquer outro material que possa ser útil, sinta-se à vontade para compartilhar!</p>
-<h2 id="indicacoes-de-livros">Indicações de Livros</h2>
-<p>Deixamos este espaço para a indicação de livros que achamos essenciais na jornada da pessoa arquiteta de software:</p>
-<table>
-<thead>
-<tr>
-<th>Título</th>
-<th>Autor</th>
-<th>Sugestão de compra</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Learning Domain-Driven Design</td>
-<td>Vlad Khononov</td>
-<td><a href="https://a.co/d/5BvaUyZ">amazon</a></td>
-</tr>
-<tr>
-<td>Writing Effective Use Cases</td>
-<td>Alistair Cockburn</td>
-<td><a href="https://a.co/d/3lbiwYm">amazon</a></td>
-</tr>
-<tr>
-<td>Implementing Domain-Driven Design</td>
-<td>Vaughn Vernon</td>
-<td><a href="https://a.co/d/c6raCPg">amazon</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="como-contribuir">Como contribuir?</h2>
-<p>Este é um espaço colaborativo, então encorajamos todos a contribuir! Você pode adicionar suas anotações, sugestões de leitura, links interessantes e qualquer outro recurso que achar relevante. Juntos, podemos criar uma base de conhecimento rica e diversificada.</p>
-<p>Envie um Pull Request no <a href="https://github.com/FelipeBergmann/8SOAT-FIAP">repositório deste projeto</a></p>
-<p>Esperamos que este repositório seja útil para todos e que possamos aproveitar ao máximo esta jornada de aprendizado!</p>
-<p>Bons estudos a todos!</p>
-<h2 id="para-onde-ir-agora">Para onde ir agora?</h2>
-<h5 id="domain-driven-design"><a href="ddd/">Domain Driven Design</a></h5></div>
+<h1 id="definition-of-ready-e-definition-of-done">Definition of Ready e Definition of Done</h1>
+<p>São pontos cruciais para definir se as tarefas estão prontas para desenvolvimento e para release. Chamamos estes pontos de critérios e aceite.</p>
+<h2 id="definition-of-ready-upstream">Definition of Ready (upstream)</h2>
+<p>Critérios que devem ser atendidos para considerar que a tarefa pode ser implementada.
+Exemplo:
+- Documento de requisitos
+- Histórias de usuário estão claramente escritas, deixando claro o objetivo a ser alcançado e o porque é valioso para o cliente
+- Critérios de aceitação bem definidos
+- Refinamento técnico
+- Arquitetura da solução desenhada
+- Quebra de itens de desenvolvimento
+- Estimativa das Demandas
+- Priorização feita pelo responsável pelo produto
+- Identificação das dependências das tarefas
+- Compreensão da equipe</p>
+<h2 id="definition-of-done-downstream">Definition of Done (downstream)</h2>
+<p>Critérios que devem ser atendidos para considerar que a tarefa foi concluída.
+Exemplo:
+- Code Review
+- Testes unitários
+- Integração contínua
+- Aprovação da esteira de qualidade
+- Documentação atualizada
+- Validação com usuário final</p>
+<h2 id="estimativa-usando-fibonacci">Estimativa usando Fibonacci</h2>
+<p>Utilizando uma escala de fibonacci, os pontos representam o esforço empregado na implementação</p>
+<h2 id="estimativa-usando-monte-carlo">Estimativa usando Monte Carlo</h2>
+<p>É verificado a quantidade de itens entregues em um % de sprints. Desta forma, podemos ser mais assertivos considerando o passado do time.</p></div>
             </div>
         </div>
 
@@ -163,14 +140,14 @@
             <hr>
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
-        <script src="js/jquery-3.6.0.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+        <script src="../../js/jquery-3.6.0.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
         <script>
-            var base_url = ".",
+            var base_url = "../..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="js/base.js"></script>
-        <script src="search/main.js"></script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/main.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -235,8 +212,3 @@
 
     </body>
 </html>
-
-<!--
-MkDocs version : 1.5.3
-Build Date UTC : 2024-06-18 03:05:21.624350+00:00
--->

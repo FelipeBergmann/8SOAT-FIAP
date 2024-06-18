@@ -7,11 +7,11 @@
         
         
         
-        <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Domain Driven Design - 8SOAT - FIAP</title>
-        <link href="../css/bootstrap.min.css" rel="stylesheet">
-        <link href="../css/font-awesome.min.css" rel="stylesheet">
-        <link href="../css/base.css" rel="stylesheet">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Event Storming - 8SOAT - FIAP</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
         <script>hljs.highlightAll();</script> 
@@ -20,7 +20,7 @@
     <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href="..">8SOAT - FIAP</a>
+                <a class="navbar-brand" href="../..">8SOAT - FIAP</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
@@ -31,14 +31,14 @@
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
                             <li class="navitem">
-                                <a href=".." class="nav-link">Início</a>
+                                <a href="../.." class="nav-link">Início</a>
                             </li>
-                            <li class="dropdown active">
+                            <li class="dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Conteúdos <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="./" class="dropdown-item active">Domain Driven Design</a>
+    <a href="../" class="dropdown-item">Domain Driven Design</a>
 </li>
                                 </ul>
                             </li>
@@ -47,12 +47,12 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../tools/" class="dropdown-item">Indicações de Ferramentas</a>
+    <a href="../../tools/" class="dropdown-item">Indicações de Ferramentas</a>
 </li>
                                 </ul>
                             </li>
                             <li class="navitem">
-                                <a href="../about/" class="nav-link">Sobre</a>
+                                <a href="../../about/" class="nav-link">Sobre</a>
                             </li>
                         </ul>
 
@@ -62,16 +62,6 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
-                            <li class="nav-item">
-                                <a rel="prev" href=".." class="nav-link">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a rel="next" href="../tools/" class="nav-link">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
                     </ul>
                 </div>
             </div>
@@ -90,41 +80,49 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#qual-aula-voce-esta-procurando" class="nav-link">Qual Aula você está procurando?</a>
+            <li class="nav-item" data-level="1"><a href="#event-storming" class="nav-link">Event Storming</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#aula-1-introducao" class="nav-link">Aula 1 - Introdução</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#aula-2-domain-storytelling" class="nav-link">Aula 2 - Domain Storytelling</a>
+            <li class="nav-item" data-level="2"><a href="#como-aplicar" class="nav-link">Como Aplicar</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#aula-3-descoberta-e-formacao-de-conhecimento" class="nav-link">Aula 3 - Descoberta e Formação de Conhecimento</a>
+            <li class="nav-item" data-level="2"><a href="#eventos" class="nav-link">Eventos</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#aula-4-trabalhando-com-contextos-delimitados" class="nav-link">Aula 4 - Trabalhando com Contextos Delimitados</a>
+            <li class="nav-item" data-level="2"><a href="#comandos" class="nav-link">Comandos</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#aula-5-design-tatico" class="nav-link">Aula 5 - Design Tático</a>
+            <li class="nav-item" data-level="2"><a href="#politicas" class="nav-link">Políticas</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#aula-6-event-storming" class="nav-link">Aula 6 - Event Storming</a>
+            <li class="nav-item" data-level="2"><a href="#modelos-de-leitura" class="nav-link">Modelos de Leitura</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#aula-7-levantamento-de-requisitos" class="nav-link">Aula 7 - Levantamento de Requisitos</a>
+            <li class="nav-item" data-level="2"><a href="#pontos-de-atencao" class="nav-link">Pontos de Atenção</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#aula-8-refinamento-tecnico" class="nav-link">Aula 8 - Refinamento Técnico</a>
+            <li class="nav-item" data-level="2"><a href="#ator" class="nav-link">Ator</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#aula-9-definition-of-ready-e-definition-of-done" class="nav-link">Aula 9 - Definition of Ready e Definition of Done</a>
+            <li class="nav-item" data-level="2"><a href="#agregados" class="nav-link">Agregados</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#eventos-pivotais" class="nav-link">Eventos Pivotais</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#sistemas-externos" class="nav-link">Sistemas Externos</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#como-facilitar-o-event-storming" class="nav-link">Como Facilitar o Event Storming</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -135,16 +133,93 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="qual-aula-voce-esta-procurando">Qual Aula você está procurando?</h1>
-<h2 id="aula-1-introducao"><a href="introducao/">Aula 1 - Introdução</a></h2>
-<h2 id="aula-2-domain-storytelling"><a href="domain_storytelling/">Aula 2 - Domain Storytelling</a></h2>
-<h2 id="aula-3-descoberta-e-formacao-de-conhecimento"><a href="discovery_and_knowledge/">Aula 3 - Descoberta e Formação de Conhecimento</a></h2>
-<h2 id="aula-4-trabalhando-com-contextos-delimitados"><a href="working_with_bounded_contexts/">Aula 4 - Trabalhando com Contextos Delimitados</a></h2>
-<h2 id="aula-5-design-tatico"><a href="tactical_design/">Aula 5 - Design Tático</a></h2>
-<h2 id="aula-6-event-storming"><a href="event_storming/">Aula 6 - Event Storming</a></h2>
-<h2 id="aula-7-levantamento-de-requisitos"><a href="system_requirements/">Aula 7 - Levantamento de Requisitos</a></h2>
-<h2 id="aula-8-refinamento-tecnico"><a href="technical_refinement/">Aula 8 - Refinamento Técnico</a></h2>
-<h2 id="aula-9-definition-of-ready-e-definition-of-done"><a href="definition_of_ready_and_done/">Aula 9 - Definition of Ready e Definition of Done</a></h2></div>
+<h1 id="event-storming">Event Storming</h1>
+<ul>
+<li>Não pertence à obra original; Foi criada posteriormente para auxiliar</li>
+<li>Atividade lúdica com um grupo de pessoas bem diversas, como:</li>
+<li>Domain Experts</li>
+<li>Ouvintes</li>
+<li>Facilitador</li>
+<li>Quanto ao material: Post-It ou softwares como Miro ou FigJam</li>
+</ul>
+<h2 id="como-aplicar">Como Aplicar</h2>
+<p>Separar os cards por cores e título:
+- Eventos
+- Comandos
+- Políticas
+- Modelos de Leitura
+- Sistemas Externos
+- Ponto De Atenção
+- Ator
+- Agregados
+- Eventos Pivotais</p>
+<p>Tudo começa com um brainstorming...</p>
+<h2 id="eventos">Eventos</h2>
+<p>Representam os acontecimentos do contexto e são sempre escritos com o verbo no passado.
+Ligações: Entre eventos</p>
+<h2 id="comandos">Comandos</h2>
+<p>Representam os gatilhos de ações e são escritos com o verbo no presente.
+Ligações: Antecede um evento</p>
+<h2 id="politicas">Políticas</h2>
+<p>Comandos que são executados por automações do sistema. As políticas podem ter uma condição para serem disparadas.
+Ligações: Antes, entre ou após um evento</p>
+<p><strong>Exemplo:</strong>
+Professor -&gt; CMD Cria Atividade -&gt; EV Atividade Criada -&gt; Pol Notificar o Aluno de nova Atividade -&gt; CMD Envia Notificação -&gt; Notificação Enviada ao Aluno -&gt; PA como o aluno é notificado?</p>
+<h2 id="modelos-de-leitura">Modelos de Leitura</h2>
+<p>Representa a interface que o usuário irá realizar/ver o comando e/ou tomar uma decisão.
+Ligações: Antes de comandos</p>
+<h2 id="pontos-de-atencao">Pontos de Atenção</h2>
+<p>Representam as dúvidas que ainda temos sobre como um evento ocorre
+Ligações: Em eventos</p>
+<h2 id="ator">Ator</h2>
+<p>Pessoa quem realiza um comando
+Ligações: Comandos</p>
+<h2 id="agregados">Agregados</h2>
+<p>Representam as entidades agregadoras que irão agrupar os eventos e outras entidades
+Ligações: Eventos, Comandos e etc</p>
+<h2 id="eventos-pivotais">Eventos Pivotais</h2>
+<p>Indicam uma mudança de fase ou de contexto na linha do tempo. São importantes para indicar as limitações dentro de um contexto e ajudam a identificar os agregados
+Ligações: Linha do tempo</p>
+<p><strong>Exemplo:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Evento Pivotal</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>Eventos relacionados à entrega da atividade pelo aluno</td>
+</tr>
+<tr>
+<td>B</td>
+<td>Eventos Relacionados a correção da atividade pelo professor</td>
+</tr>
+<tr>
+<td>C</td>
+<td>Eventos Relacionados aplicar a nota</td>
+</tr>
+</tbody>
+</table>
+<h2 id="sistemas-externos">Sistemas Externos</h2>
+<p>Representa um sistema que está fora do domínio (em outro contexto delimitado)
+Ligações: Eventos e comandos</p>
+<h2 id="como-facilitar-o-event-storming">Como Facilitar o Event Storming</h2>
+<ol>
+<li>Todos criam os cartões com os eventos (brainstorming)</li>
+<li>Os cartões de eventos são refinados, removendo os duplicados</li>
+<li>Os cartões de eventos são colocados em ordem sequencial e ligados por flechas, apontando a direção do fluxo</li>
+<li>[3.1.] Qualquer caminho alternativo é indicado por uma bifurcação. Dica: Alterar a cor/traçado das flechas nos caminhos alternativos para facilitar a leitura</li>
+<li>Em uma nova leitura dos eventos, adicionar os cartões de pontos de atenção, destacando as dúvidas que ainda temos</li>
+<li>Separar os contextos com os Eventos Pivotais</li>
+<li>Escrever os comandos que fazem com que os eventos aconteçam, adicionando-os anteriormente a cada evento</li>
+<li>Adicione os cartões de Política: eventos que são executados por outros sistemas e não um ator</li>
+<li>Inclua os cartões de modelo de leitura</li>
+<li>Inclua os cartões de sistema externo</li>
+<li>Monte os cartões de agregados, adicionando todos os eventos e comandos aos agregados</li>
+</ol></div>
             </div>
         </div>
 
@@ -152,14 +227,14 @@
             <hr>
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
-        <script src="../js/jquery-3.6.0.min.js"></script>
-        <script src="../js/bootstrap.min.js"></script>
+        <script src="../../js/jquery-3.6.0.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
         <script>
-            var base_url = "..",
+            var base_url = "../..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="../js/base.js"></script>
-        <script src="../search/main.js"></script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/main.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
