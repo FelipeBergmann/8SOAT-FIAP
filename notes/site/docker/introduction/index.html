@@ -7,11 +7,11 @@
         
         
         
-        <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Indicações de Ferramentas - 8SOAT - FIAP</title>
-        <link href="../css/bootstrap.min.css" rel="stylesheet">
-        <link href="../css/font-awesome.min.css" rel="stylesheet">
-        <link href="../css/base.css" rel="stylesheet">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Introdução ao Docker - 8SOAT - FIAP</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
         <script>hljs.highlightAll();</script> 
@@ -20,7 +20,7 @@
     <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href="..">8SOAT - FIAP</a>
+                <a class="navbar-brand" href="../..">8SOAT - FIAP</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
@@ -31,32 +31,32 @@
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
                             <li class="navitem">
-                                <a href=".." class="nav-link">Início</a>
+                                <a href="../.." class="nav-link">Início</a>
                             </li>
                             <li class="dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Conteúdos <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../ddd/" class="dropdown-item">Domain Driven Design</a>
+    <a href="../../ddd/" class="dropdown-item">Domain Driven Design</a>
 </li>
                                     
 <li>
-    <a href="../docker/" class="dropdown-item">Docker</a>
+    <a href="../" class="dropdown-item">Docker</a>
 </li>
                                 </ul>
                             </li>
-                            <li class="dropdown active">
+                            <li class="dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Ferramentas <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="./" class="dropdown-item active">Indicações de Ferramentas</a>
+    <a href="../../tools/" class="dropdown-item">Indicações de Ferramentas</a>
 </li>
                                 </ul>
                             </li>
                             <li class="navitem">
-                                <a href="../about/" class="nav-link">Sobre</a>
+                                <a href="../../about/" class="nav-link">Sobre</a>
                             </li>
                         </ul>
 
@@ -66,16 +66,6 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
-                            <li class="nav-item">
-                                <a rel="prev" href="../docker/" class="nav-link">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a rel="next" href="../about/" class="nav-link">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
                     </ul>
                 </div>
             </div>
@@ -94,12 +84,8 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#indicacoes-de-ferramentas" class="nav-link">Indicações de Ferramentas</a>
+            <li class="nav-item" data-level="1"><a href="#introducao-ao-docker" class="nav-link">Introdução ao Docker</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#domain-story-telling" class="nav-link">Domain Story Telling</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
               </ul>
             </li>
         </ul>
@@ -107,11 +93,108 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="indicacoes-de-ferramentas">Indicações de Ferramentas</h1>
-<h2 id="domain-story-telling">Domain Story Telling</h2>
+<h1 id="introducao-ao-docker">Introdução ao Docker</h1>
+<p>3 processos do linux que fazem toda a diferença:
+Kernel, CGroup e Namespaces</p>
 <ul>
-<li><a href="https://egon.io/">Egon.Io</a></li>
-</ul></div>
+<li>
+<p>no windows o docker precisa do wsl na versão 2</p>
+</li>
+<li>
+<p>docker hub: repositório de imagens docker</p>
+</li>
+<li>docker file: onde escrevemos os comandos que serão executados automaticamente assim que o container for iniciado</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>cmds</th>
+<th>ação</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>docker version</td>
+<td></td>
+</tr>
+<tr>
+<td>docker</td>
+<td>mostra um help de comandos</td>
+</tr>
+<tr>
+<td>docker container run [nome da imagem]</td>
+<td>baixa e executa a img</td>
+</tr>
+<tr>
+<td>docker pull [nome da imagem]</td>
+<td>baixa a img</td>
+</tr>
+<tr>
+<td>docker container ls</td>
+<td>lista os containeres em execução</td>
+</tr>
+<tr>
+<td>docker container ls -la</td>
+<td>lista os containeres já executados</td>
+</tr>
+<tr>
+<td>docker image ls</td>
+<td>lista as imagens que existem localmente (já baixadas)</td>
+</tr>
+<tr>
+<td>docker container run -it node:18-slim</td>
+<td>Roda o container em modo interativo, assim ele não finaliza e abre o console no container</td>
+</tr>
+<tr>
+<td>docker container kill [id do container]</td>
+<td>finalizar execução do container</td>
+</tr>
+<tr>
+<td>docker container run -d [nome da imagem]</td>
+<td>roda em modo daemon, em segundo plano, sem travar o console atual</td>
+</tr>
+<tr>
+<td>docker container stats [id do container]</td>
+<td>mostra os status do container</td>
+</tr>
+<tr>
+<td>docker container attach [id do container]</td>
+<td>entra no container em execução (console)</td>
+</tr>
+<tr>
+<td>docker container start [id do container]</td>
+<td></td>
+</tr>
+<tr>
+<td>docker container restart [id do container]</td>
+<td></td>
+</tr>
+<tr>
+<td>docker container stop [id do container]</td>
+<td></td>
+</tr>
+<tr>
+<td>docker container pause [id do container]</td>
+<td></td>
+</tr>
+<tr>
+<td>docker container unpause [id do container]</td>
+<td></td>
+</tr>
+<tr>
+<td>docker container rm [id do container]</td>
+<td>Remove um container que não está em execução</td>
+</tr>
+<tr>
+<td>docker container rm -f [id do container]</td>
+<td>Remove um container de forma forçada</td>
+</tr>
+<tr>
+<td>docker container top [id do container]</td>
+<td>Mostra uma lista de processos rodando atualmente no container</td>
+</tr>
+</tbody>
+</table></div>
             </div>
         </div>
 
@@ -119,14 +202,14 @@
             <hr>
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
-        <script src="../js/jquery-3.6.0.min.js"></script>
-        <script src="../js/bootstrap.min.js"></script>
+        <script src="../../js/jquery-3.6.0.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
         <script>
-            var base_url = "..",
+            var base_url = "../..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="../js/base.js"></script>
-        <script src="../search/main.js"></script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/main.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
