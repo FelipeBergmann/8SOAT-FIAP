@@ -2,6 +2,7 @@
 
 ## Imagens
 > Buscar utilizar imagens que tem os menores tamanhos e que deêm suporte a todas as funcionalidades que o app precisa
+> Desta forma, além de otimizar os downloads e uploads, estamos reduzindo a superfície de vulnerabilidades
 
 ## Variáveis de Ambiente
 
