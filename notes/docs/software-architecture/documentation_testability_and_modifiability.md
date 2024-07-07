@@ -26,5 +26,8 @@ Babysteps: dar sempre pequenos passos em direção à solução, garante que os 
 2. Faça o código funcionar
 3. Elimine as redundâncias
 
+## Modificabilidade
 
+É o pilar do software que garante que ele pode ser modificado com o mínimo de esforço e continue funcionando corretamente.
+Testes são essenciais para garantir a modificabilidade.
 
