@@ -35,6 +35,8 @@ EXPOSE 3000
 # executa o comando node app.js
 # aqui usamos CMD ao invés do RUN pois o RUN é executado no momento de build da imagem
 # já o CMD é executado no momento em que o container é iniciado
+# também poderíamos usar o ENTRYPOINT - a diferença é que com o CMD os argumentos podem
+# ser substituídos via CLI, já no ENTRYPOINT não
 CMD [ "node", "app.js" ]
 
 ```
