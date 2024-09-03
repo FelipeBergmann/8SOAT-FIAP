@@ -7,11 +7,11 @@
         
         
         
-        <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Boas Práticas - 8SOAT - FIAP</title>
-        <link href="../../css/bootstrap.min.css" rel="stylesheet">
-        <link href="../../css/font-awesome.min.css" rel="stylesheet">
-        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Arquitetura Limpa - 8SOAT - FIAP</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
         <script>hljs.highlightAll();</script> 
@@ -20,7 +20,7 @@
     <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href="../..">8SOAT - FIAP</a>
+                <a class="navbar-brand" href="..">8SOAT - FIAP</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
@@ -31,26 +31,26 @@
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
                             <li class="navitem">
-                                <a href="../.." class="nav-link">Início</a>
+                                <a href=".." class="nav-link">Início</a>
                             </li>
-                            <li class="dropdown">
+                            <li class="dropdown active">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Conteúdos <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../../ddd/" class="dropdown-item">Domain Driven Design</a>
+    <a href="../ddd/" class="dropdown-item">Domain Driven Design</a>
 </li>
                                     
 <li>
-    <a href="../" class="dropdown-item">Docker</a>
+    <a href="../docker/" class="dropdown-item">Docker</a>
 </li>
                                     
 <li>
-    <a href="../../software-architecture/" class="dropdown-item">Arquitetura de Software</a>
+    <a href="../software-architecture/" class="dropdown-item">Arquitetura de Software</a>
 </li>
                                     
 <li>
-    <a href="../../clean-architecture/" class="dropdown-item">Arquitetura Limpa</a>
+    <a href="./" class="dropdown-item active">Arquitetura Limpa</a>
 </li>
                                 </ul>
                             </li>
@@ -59,12 +59,12 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../../tools/" class="dropdown-item">Indicações de Ferramentas</a>
+    <a href="../tools/" class="dropdown-item">Indicações de Ferramentas</a>
 </li>
                                 </ul>
                             </li>
                             <li class="navitem">
-                                <a href="../../about/" class="nav-link">Sobre</a>
+                                <a href="../about/" class="nav-link">Sobre</a>
                             </li>
                         </ul>
 
@@ -74,6 +74,16 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../software-architecture/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../tools/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
                     </ul>
                 </div>
             </div>
@@ -92,25 +102,25 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#boas-praticas" class="nav-link">Boas Práticas</a>
+            <li class="nav-item" data-level="1"><a href="#arquitetura-limpa-clean-architecture" class="nav-link">Arquitetura Limpa (Clean Architecture)</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#imagens" class="nav-link">Imagens</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#variaveis-de-ambiente" class="nav-link">Variáveis de Ambiente</a>
+            <li class="nav-item" data-level="2"><a href="#introducao" class="nav-link">Introdução</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#logs" class="nav-link">Logs</a>
+            <li class="nav-item" data-level="2"><a href="#principios-fundamentais" class="nav-link">Princípios Fundamentais</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#limpeza-de-disco" class="nav-link">Limpeza de disco</a>
+            <li class="nav-item" data-level="2"><a href="#principios-solid" class="nav-link">Princípios S.O.L.I.D</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#artigos" class="nav-link">Artigos</a>
+            <li class="nav-item" data-level="2"><a href="#estrutura-das-camadas" class="nav-link">Estrutura das Camadas</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#decisoes-de-arquitetura" class="nav-link">Decisões de Arquitetura</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -121,30 +131,57 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="boas-praticas">Boas Práticas</h1>
-<h2 id="imagens">Imagens</h2>
+<h1 id="arquitetura-limpa-clean-architecture">Arquitetura Limpa (Clean Architecture)</h1>
+<h2 id="introducao">Introdução</h2>
+<ul>
+<li><strong>Criador:</strong> Robert C. Martin, também conhecido como "Uncle Bob".</li>
+<li><strong>Conceito:</strong> O termo "limpo" (clean) significa claro, organizado e objetivo. A ideia não é sugerir que outras arquiteturas são "sujas", mas sim enfatizar a clareza e a objetividade no código.</li>
+<li><strong>Objetivo:</strong> Aumentar a qualidade do código, facilitando a manutenção e evitando problemas para o desenvolvedor ao resolver os problemas do cliente.</li>
+<li><strong>Filosofia:</strong> "Nós lemos mais código do que escrevemos", o que reforça a importância de escrever código claro e organizado.</li>
+</ul>
+<h2 id="principios-fundamentais">Princípios Fundamentais</h2>
+<ul>
+<li><strong>Separação de Responsabilidades:</strong> O código deve ser fragmentado em componentes especializados, onde cada componente tem uma única responsabilidade.</li>
+<li><strong>Hierarquia de Componentes:</strong></li>
+<li><strong>Arquitetura:</strong> Define como os componentes são utilizados.</li>
+<li><strong>Componentes:</strong> Representam como o código é organizado.</li>
+<li><strong>Código:</strong> Detalha o que realmente é feito.</li>
+</ul>
+<hr />
+<h2 id="principios-solid">Princípios S.O.L.I.D</h2>
+<h3 id="single-responsibility-principle-srp">Single Responsibility Principle (SRP):</h3>
+<p>Cada componente ou classe deve ter apenas uma única razão para mudar, ou seja, uma única responsabilidade.</p>
+<h3 id="openclosed-principle-ocp">Open/Closed Principle (OCP):</h3>
+<p>Os componentes devem ser fechados para modificação, mas abertos para extensão.</p>
+<h3 id="liskov-substitution-principle-lsp">Liskov Substitution Principle (LSP):</h3>
+<p>Os componentes podem ser substituídos por seus subtipos sem afetar a execução correta do programa.</p>
+<h3 id="interface-segregation-principle-isp">Interface Segregation Principle (ISP):</h3>
+<p>As interfaces devem ser específicas e focadas, evitando sobrecarga de responsabilidades e implementações desnecessárias.</p>
+<h3 id="dependency-inversion-principle-dip">Dependency Inversion Principle (DIP):</h3>
+<p>Os componentes devem depender de abstrações (interfaces) e não de implementações concretas. Isso permite que eles recebam suas dependências já criadas, sem se preocupar com a instância.</p>
+<hr />
+<h2 id="estrutura-das-camadas">Estrutura das Camadas</h2>
+<p><img alt="clean architecture layers" src="images/CleanArchitecture.jpg" /></p>
+<p>Independência das Camadas: Cada camada deve funcionar de forma independente das outras, seguindo sempre um fluxo de fora para dentro.</p>
 <blockquote>
-<p>Buscar utilizar imagens que tem os menores tamanhos e que deêm suporte a todas as funcionalidades que o app precisa
-Desta forma, além de otimizar os downloads e uploads, estamos reduzindo a superfície de vulnerabilidades</p>
+<p>Das camadas de nível mais alto (internas) para as de nível mais baixo (internas) em abstração</p>
 </blockquote>
-<h2 id="variaveis-de-ambiente">Variáveis de Ambiente</h2>
-<p>Uma das formas que podemos aumentar a segurança é utilizar a passagem de argumentos durante o docker build.</p>
-<p>No Dockerfile:</p>
-<pre><code class="language-bash">ARG MINHA_VARIAVEL
-ENV VARIAVEL_DE_AMBIENTE=$MINHA_VARIAVEL
-</code></pre>
-<p>Passamos o argumento após a flag <code>--build-arg</code></p>
-<p><code>docker build -t node-app:arg --build-arg MINHA_VARIAVEL=valor</code></p>
-<h2 id="logs">Logs</h2>
-<p>Para ajudar na detecção de erros, podemos analisar os logs de saída de um container:</p>
-<p><code>docker container logs {id_do_container}</code></p>
-<h2 id="limpeza-de-disco">Limpeza de disco</h2>
-<p>Por vezes acumulamos muitos containeres em nosso disco, para excluí-las, podemos utilizar o comando <code>docker container prune</code> que todas os containeres que não estão em execução serão excluídos.</p>
-<p>Para remover as imagens, podemos utilizar os comandos:
-<code>docker image ls</code> para obter a lista de imagens e seus Ids
-<code>docker image rm {id_da_image}</code> ou <code>docker image rm -f {id_da_image}</code> para forçar a exclusão.</p>
-<h2 id="artigos">Artigos</h2>
-<p><a href="https://www.gasparbarancelli.com/post/boas-praticas-para-criar-imagens-docker-eficientes-seguras-e-escalaveis">Boas Práticas - Gaspar Barancelli</a></p></div>
+<h3 id="entidades">Entidades</h3>
+<p><strong>Definição:</strong> Elementos centrais que participam dos casos de uso.
+<strong>Função:</strong> Representar as regras de negócio e os dados da aplicação.</p>
+<h3 id="casos-de-uso">Casos de Uso</h3>
+<p><strong>Função:</strong> Coordenar as entidades para realizar cenários específicos de uso. Podem se comunicar entre si.</p>
+<p><strong>Exemplo:</strong> </p>
+<p><code>Caso de uso "Iniciar Venda": 
+ Cria o vendedor. 
+ Cria a venda associada ao vendedor.</code></p>
+<h3 id="servicos-e-camadas-externas">Serviços e Camadas Externas</h3>
+<p><strong>Controllers, Gateways e Presenters:</strong></p>
+<p><strong>Controller:</strong> Serve como ponto de entrada, chamado por um serviço externo (API, dispositivo, web). Não é o mesmo "controller" do MVC.</p>
+<p><strong>Gateway:</strong> Atua como intermediário entre o banco de dados e os casos de uso, fornecendo os dados necessários.</p>
+<p><strong>Presenter:</strong> Cuida do formato de saída dos dados, preparando-os para a apresentação.</p>
+<h2 id="decisoes-de-arquitetura">Decisões de Arquitetura</h2>
+<p><strong>Infraestrutura:</strong> Decisões sobre infraestrutura, como armazenamento de dados e tráfego, devem ser mantidas fora do domínio central da aplicação.</p></div>
             </div>
         </div>
 
@@ -152,14 +189,14 @@ ENV VARIAVEL_DE_AMBIENTE=$MINHA_VARIAVEL
             <hr>
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
-        <script src="../../js/jquery-3.6.0.min.js"></script>
-        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../js/jquery-3.6.0.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
         <script>
-            var base_url = "../..",
+            var base_url = "..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="../../js/base.js"></script>
-        <script src="../../search/main.js"></script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">

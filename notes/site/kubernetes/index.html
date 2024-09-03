@@ -7,11 +7,11 @@
         
         
         
-        <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Descoberta e Formação de Conhecimento - 8SOAT - FIAP</title>
-        <link href="../../css/bootstrap.min.css" rel="stylesheet">
-        <link href="../../css/font-awesome.min.css" rel="stylesheet">
-        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Kubernetes - 8SOAT - FIAP</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
         <script>hljs.highlightAll();</script> 
@@ -20,7 +20,7 @@
     <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href="../..">8SOAT - FIAP</a>
+                <a class="navbar-brand" href="..">8SOAT - FIAP</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
@@ -31,26 +31,26 @@
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
                             <li class="navitem">
-                                <a href="../.." class="nav-link">Início</a>
+                                <a href=".." class="nav-link">Início</a>
                             </li>
                             <li class="dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Conteúdos <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../" class="dropdown-item">Domain Driven Design</a>
+    <a href="../ddd/" class="dropdown-item">Domain Driven Design</a>
 </li>
                                     
 <li>
-    <a href="../../docker/" class="dropdown-item">Docker</a>
+    <a href="../docker/" class="dropdown-item">Docker</a>
 </li>
                                     
 <li>
-    <a href="../../software-architecture/" class="dropdown-item">Arquitetura de Software</a>
+    <a href="../software-architecture/" class="dropdown-item">Arquitetura de Software</a>
 </li>
                                     
 <li>
-    <a href="../../clean-architecture/" class="dropdown-item">Arquitetura Limpa</a>
+    <a href="../clean-architecture/" class="dropdown-item">Arquitetura Limpa</a>
 </li>
                                 </ul>
                             </li>
@@ -59,12 +59,12 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../../tools/" class="dropdown-item">Indicações de Ferramentas</a>
+    <a href="../tools/" class="dropdown-item">Indicações de Ferramentas</a>
 </li>
                                 </ul>
                             </li>
                             <li class="navitem">
-                                <a href="../../about/" class="nav-link">Sobre</a>
+                                <a href="../about/" class="nav-link">Sobre</a>
                             </li>
                         </ul>
 
@@ -92,24 +92,8 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#descoberta-e-formacao-de-conhecimento" class="nav-link">Descoberta e Formação de Conhecimento</a>
+            <li class="nav-item" data-level="1"><a href="#kubernetes" class="nav-link">Kubernetes</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#dicionario-e-linguagem-ubiqua" class="nav-link">Dicionário e Línguagem ubíqua</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#modelagem-de-dominio" class="nav-link">Modelagem de Domínio</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#onde-guardar" class="nav-link">Onde guardar?</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#contextos-delimitados" class="nav-link">Contextos Delimitados</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
               </ul>
             </li>
         </ul>
@@ -117,26 +101,7 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="descoberta-e-formacao-de-conhecimento">Descoberta e Formação de Conhecimento</h1>
-<h2 id="dicionario-e-linguagem-ubiqua">Dicionário e  Línguagem ubíqua</h2>
-<p>É a linguagem do negócio, a usada no dia-a-dia. Dessa forma, todos devem utilizar a mesma linguagem, nada de termos técnicos e outros termos específicos.</p>
-<p>Anotações/Dicionário: Explicações sobre quem são os atores e termos do dia-a-dia. Dependendo por subdomínio (contexto), a mesma pessoa pode ter nomes diferentes.</p>
-<h2 id="modelagem-de-dominio">Modelagem de Domínio</h2>
-<p>Abstração de um processo do qual resolve um problema. 
-Extraído apenas o essencial para que o problema seja resolvido, ou seja, remover do escopo detalhes que não agregam.</p>
-<h2 id="onde-guardar">Onde guardar?</h2>
-<ul>
-<li>Wikis</li>
-<li>Jira, Notion...</li>
-<li>Gestão de Projetos</li>
-<li>Trello</li>
-<li>Repositórios</li>
-<li>Git (versionadores de código ou softwares muito técnicos não são muito recomendados, pois estes documentos serão acessados/editados não necessariamente por pessoas técnicas)</li>
-</ul>
-<h2 id="contextos-delimitados">Contextos Delimitados</h2>
-<p>A linguagem Ubíqua é uma ótima metrica. Se é a mesma terminologia em dois contextos e tratam de formas muito parecidas pode ser uma boa ideia juntar</p>
-<p>O numero de contextos <strong>pode</strong> mostrar o numero de times que farão parte da equipe de desenvolvimento</p>
-<p>Um time pode trabalhar em N contextos delimitados, mas um contexto delimitado só pode ser trabalhado por um único time</p></div>
+<h1 id="kubernetes">Kubernetes</h1></div>
             </div>
         </div>
 
@@ -144,14 +109,14 @@ Extraído apenas o essencial para que o problema seja resolvido, ou seja, remove
             <hr>
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
-        <script src="../../js/jquery-3.6.0.min.js"></script>
-        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../js/jquery-3.6.0.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
         <script>
-            var base_url = "../..",
+            var base_url = "..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="../../js/base.js"></script>
-        <script src="../../search/main.js"></script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">

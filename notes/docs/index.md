@@ -27,6 +27,7 @@ Deixamos este espaço para a indicação de livros que achamos essenciais na jor
 | Learning Domain-Driven Design | Vlad Khononov | [amazon](https://a.co/d/5BvaUyZ)|
 | Writing Effective Use Cases | Alistair Cockburn | [amazon](https://a.co/d/3lbiwYm) |
 | Implementing Domain-Driven Design | Vaughn Vernon | [amazon](https://a.co/d/c6raCPg) |
+| Arquitetura Limpa | Robert C. Martin | [amazon](https://a.co/d/bOnB31f) |
 
 ## Como contribuir?
 
@@ -44,3 +45,4 @@ Bons estudos a todos!
 ##### [Domain Driven Design](./ddd/index.md)
 ##### [Docker](./docker/index.md)
 ##### [Arquitetura de Software](./software-architecture/index.md)
+##### [Arquitetura Limpa (Clean Architecture)](./clean-architecture/index.md)

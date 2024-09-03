@@ -8,6 +8,7 @@ nav:
     - Domain Driven Design: ./ddd/index.md
     - Docker: ./docker/index.md
     - Arquitetura de Software: ./software-architecture/index.md
+    - Arquitetura Limpa: ./clean-architecture/index.md
   - Ferramentas:
     - Indicações de Ferramentas: ./tools/index.md
   - Sobre: about.md
