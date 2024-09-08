@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Levantamento de Requisitos - 8SOAT - FIAP</title>
+        <title>Services - 8SOAT - FIAP</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -38,7 +38,7 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../" class="dropdown-item">Domain Driven Design</a>
+    <a href="../../ddd/" class="dropdown-item">Domain Driven Design</a>
 </li>
                                     
 <li>
@@ -54,7 +54,7 @@
 </li>
                                     
 <li>
-    <a href="../../kubernetes/" class="dropdown-item">Kubernetes</a>
+    <a href="../" class="dropdown-item">Kubernetes</a>
 </li>
                                 </ul>
                             </li>
@@ -96,48 +96,8 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#levantamento-de-requisitos" class="nav-link">Levantamento de Requisitos</a>
+            <li class="nav-item" data-level="1"><a href="#services" class="nav-link">Services</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#os-quatro-grandes-riscos" class="nav-link">Os Quatro Grandes Riscos</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#risco-de-valor" class="nav-link">Risco de Valor</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#risco-de-negocio" class="nav-link">Risco de Negócio</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#risco-de-usabilidade" class="nav-link">Risco de Usabilidade</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#risco-tecnico" class="nav-link">Risco Técnico</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#como-mitigar-os-riscos" class="nav-link">Como Mitigar os Riscos</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#especificacao-do-board" class="nav-link">Especificação do Board</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#documentacao-dos-requisitos" class="nav-link">Documentação dos Requisitos</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#upstream" class="nav-link">Upstream</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#downstream" class="nav-link">Downstream</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
               </ul>
             </li>
         </ul>
@@ -145,137 +105,16 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="levantamento-de-requisitos">Levantamento de Requisitos</h1>
-<h2 id="os-quatro-grandes-riscos">Os Quatro Grandes Riscos</h2>
-<p>Frentes que precisamos analisar antes de lançar um produto. Os quatro listados são:
-- Risco de Valor
-- Risco de Negócio
-- Risco de Usabilidade
-- Risco Técnico</p>
-<h2 id="risco-de-valor">Risco de Valor</h2>
-<p>Risco do usuário não precisar de fato do seu produto. Se questione:
-- O produto gera valor o suficiente a ponto do usuário pagar por ele?
-- Quais outras formas que o usuário tem para resolver o mesmo problema?</p>
-<h2 id="risco-de-negocio">Risco de Negócio</h2>
-<p>Está ligado ao ponto de que se o produto faz sentido no planjeamento estratégico da empresa. Se o produto pode gerar algum desgaste na empresa na esfera reputacional, legal ou financeiro.</p>
-<h2 id="risco-de-usabilidade">Risco de Usabilidade</h2>
-<p>Está ligado com a dificuldade do usuário em utilizar o sistema (alô analistas de UX).</p>
-<h2 id="risco-tecnico">Risco Técnico</h2>
-<p>Está ligado ao risco de não ter recursos de profissionais ou tecnologias para implementar o produto</p>
-<h2 id="como-mitigar-os-riscos">Como Mitigar os Riscos</h2>
-<p>Antes de começar a implementar o produto, passamos pela etapa de descobrimento, que fará o estudo de mercado da solução.</p>
-<p>Podemos então criar uma esteira de desenvolvimento inicialmente dividida por duas áreas: Upstream e Downstream - Planjamento e Desenvolvimento de demandas, respectivamente.
-Sugestão de colunas:
-Planejamento:
-- backlog
-- levantamento de requisitos
-- refinamento técnico
-- quebras técnicas e estimativas
-- pronto para desenvolvimento
-- prioridades (esta coluna é divida entre as duas áreas, pois é a passagem de área)</p>
-<p>Desenvolvimento:
-- em andamento
-- code review
-- testing
-- fixing uat
-- Pronto para deploy
-- done</p>
-<p>O objetivo do levantamento de requisitos é mitigar problemas como:</p>
+<h1 id="services">Services</h1>
+<p>Um objeto Service do Kubernetes é uma camada de abstração que define um conjunto lógico de Pods e habilita a exposição ao tráfego externo, balanceamento de carga e descoberta de serviço para esses Pods.</p>
+<p>Embora cada Pod tenha um endereço IP único, estes IPs não são expostos externamente ao cluster sem um objeto Service. Objetos Service permitem que suas aplicações recebam tráfego. Services podem ser expostos de formas diferentes especificando um tipo (campo type) na especificação do serviço (campo spec):</p>
 <ul>
-<li>Demanda incompreendida pelo profissional que a desenvolverá</li>
-<li>Imprevisibilidade no desenvolvimento</li>
-<li>Mitigar bugs, débitos técnicos e alto grau de dependência de outros sistemas</li>
+<li><strong>ClusterIP (padrão)</strong> - Expõe o serviço sob um endereço IP interno no cluster. Este tipo de serviço é acessível somente dentro do cluster.</li>
+<li><strong>NodePort</strong> - Expõe o serviço sob a mesma porta em cada nó selecionado no cluster usando NAT. Torna o serviço acessível externamente ao cluster usando o endereço <NodeIP>:<NodePort>. É um superconjunto do tipo ClusterIP.</li>
+<li><strong>LoadBalancer</strong> - Cria um balanceador de carga externo no provedor de nuvem atual (se suportado) e atribui um endereço IP fixo e externo para o serviço. É um superconjunto do tipo NodePort.</li>
+<li><strong>ExternalName</strong> - Mapeia o Service para o conteúdo do campo externalName (por exemplo, foo.bar.example.com), retornando um registro DNS do tipo CNAME com o seu valor. Nenhum tipo de proxy é configurado. Este tipo requer a versão 1.7 ou mais recente do kube-dns, ou o CoreDNS versão 0.0.8 ou superior.</li>
 </ul>
-<h2 id="especificacao-do-board">Especificação do Board</h2>
-<table>
-<thead>
-<tr>
-<th>Coluna</th>
-<th>Área</th>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>backlog</td>
-<td>Planejamento</td>
-<td>Onde ficam todas as idéias que ainda não estão maduras</td>
-</tr>
-<tr>
-<td>levantamento de requisitos</td>
-<td>Planejamento</td>
-<td>Explorar e detalhar o que deve ser entregue. Personas e etc</td>
-</tr>
-<tr>
-<td>refinamento técnico</td>
-<td>Planejamento</td>
-<td>Explorar soluções tecnológicas para cumprir o objetivo</td>
-</tr>
-<tr>
-<td>quebras técnicas e estimativas</td>
-<td>Planejamento</td>
-<td>Separar as demandas para que elas sejam simples de executar e sem depender umas das outras</td>
-</tr>
-<tr>
-<td>pronto para desenvolvimento</td>
-<td>Planejamento</td>
-<td>Onde estamos preparados para desenvolver</td>
-</tr>
-<tr>
-<td>prioridades</td>
-<td>Planejamento</td>
-<td></td>
-</tr>
-<tr>
-<td>em andamento</td>
-<td>Desenvolvimento</td>
-<td></td>
-</tr>
-<tr>
-<td>code review</td>
-<td>Desenvolvimento</td>
-<td></td>
-</tr>
-<tr>
-<td>testing</td>
-<td>Desenvolvimento</td>
-<td></td>
-</tr>
-<tr>
-<td>fixing uat</td>
-<td>Desenvolvimento</td>
-<td></td>
-</tr>
-<tr>
-<td>Pronto para deploy</td>
-<td>Desenvolvimento</td>
-<td></td>
-</tr>
-<tr>
-<td>done</td>
-<td>Desenvolvimento</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="documentacao-dos-requisitos">Documentação dos Requisitos</h2>
-<h3 id="persona">Persona</h3>
-<p>Qualquer usuário de um produto.
-É importante entender o perfil da persona para poder projetar de forma correta o comportamento do produto.</p>
-<h3 id="problema">Problema</h3>
-<p>A dor do usuário que será resolvida. Deve ser bem claro quanto ao fluxo atual do usuário e como ele resolve ele atualmente.</p>
-<h3 id="mapeamento-do-fluxo">Mapeamento do fluxo</h3>
-<p>É importante mapear o fluxo atual, apontando por etapas as personas que a executam e qual o sistema. Desta forma, podemos propor soluções às etapas mais exaustivas.</p>
-<h3 id="objetivo">Objetivo</h3>
-<p>Descrever os objetivos que possam ser medidos</p>
-<h3 id="requisitos-da-solucao">Requisitos da solução</h3>
-<p>Aqui mapeamos os requisitos funcionais.</p>
-<h3 id="requisitos-nao-funcionais">Requisitos não funcionais</h3>
-<p>Aqui mapeamos os requisitos que não são funcionalidades mas que são essenciais para o sucesso do produto. Ex: Segurança.</p>
-<h2 id="upstream">Upstream</h2>
-<p>É o conceito da etapa de mapeamento e descoberta do produto.</p>
-<h2 id="downstream">Downstream</h2>
-<p>Consiste do desenvolvimento (implementação) própriamente dita até a entrega (done)</p></div>
+<p><a href="../">Voltar para Kubernetes</a></p></div>
             </div>
         </div>
 

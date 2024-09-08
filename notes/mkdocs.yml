@@ -9,6 +9,7 @@ nav:
     - Docker: ./docker/index.md
     - Arquitetura de Software: ./software-architecture/index.md
     - Arquitetura Limpa: ./clean-architecture/index.md
+    - Kubernetes: ./kubernetes/index.md
   - Ferramentas:
     - Indicações de Ferramentas: ./tools/index.md
   - Sobre: about.md

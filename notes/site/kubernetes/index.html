@@ -33,7 +33,7 @@
                             <li class="navitem">
                                 <a href=".." class="nav-link">Início</a>
                             </li>
-                            <li class="dropdown">
+                            <li class="dropdown active">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Conteúdos <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
@@ -51,6 +51,10 @@
                                     
 <li>
     <a href="../clean-architecture/" class="dropdown-item">Arquitetura Limpa</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active">Kubernetes</a>
 </li>
                                 </ul>
                             </li>
@@ -74,6 +78,16 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../clean-architecture/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../tools/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
                     </ul>
                 </div>
             </div>
@@ -94,6 +108,18 @@
             
             <li class="nav-item" data-level="1"><a href="#kubernetes" class="nav-link">Kubernetes</a>
               <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#pods-e-nos-nodes" class="nav-link">Pods e Nós (Nodes)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#o-que-e-um-cluster" class="nav-link">O que é um cluster?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#proximos-topicos" class="nav-link">Próximos Tópicos</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -101,7 +127,25 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="kubernetes">Kubernetes</h1></div>
+<h1 id="kubernetes">Kubernetes</h1>
+<p>Kubernetes é um sistema de orquestração de contêineres de código aberto que automatiza a implantação, escalonamento e gerenciamento de aplicações em contêineres. Ele permite que você agrupe contêineres em pods, que podem ser gerenciados e escalados de forma eficiente. Kubernetes lida com a distribuição de cargas de trabalho, gerenciamento de estado e recuperação de falhas. Oferece recursos como balanceamento de carga, armazenamento persistente e gestão de configuração. É amplamente utilizado para manter aplicações altamente disponíveis e escaláveis em ambientes de produção.</p>
+<h2 id="pods-e-nos-nodes">Pods e Nós (Nodes)</h2>
+<p>Pods são a menor unidade de execução no Kubernetes, consistindo em um ou mais contêineres que compartilham o mesmo ambiente de rede e armazenamento. Eles agrupam processos relacionados para funcionarem juntos de forma coesa e são executados em nós (nodes). Nós são máquinas físicas ou virtuais que compõem o cluster Kubernetes e executam os pods. Cada nó possui um agente chamado Kubelet que gerencia a execução dos pods, além de recursos como CPU, memória e armazenamento. O Kubernetes gerencia a distribuição de pods pelos nós, garantindo alta disponibilidade e escalabilidade das aplicações.</p>
+<p><a href="pods_and_nodes/">Apronfundar conhecimento em Pods e Nodes</a></p>
+<h2 id="o-que-e-um-cluster">O que é um cluster?</h2>
+<p>Um cluster no contexto do Kubernetes é um conjunto de máquinas (nós) que trabalham juntas para executar e gerenciar aplicações em contêineres de forma distribuída e coordenada. O cluster inclui:</p>
+<p><strong>Nó Mestre (Control Plane):</strong> Gerencia o cluster e coordena todas as operações, como escalonamento, alocação de pods e monitoramento de saúde. Ele é responsável por tomar decisões sobre onde os pods serão executados e por manter o estado desejado do sistema.</p>
+<p><strong>Nós de Trabalho (Worker Nodes):</strong> Executam os contêineres dentro dos pods e fornecem os recursos de CPU, memória e armazenamento para as aplicações. Cada nó de trabalho é gerenciado pelo nó mestre.</p>
+<p>O Kubernetes utiliza o cluster para distribuir e balancear a carga de trabalho, garantindo que as aplicações rodem de forma eficiente e escalável, além de oferecer resiliência e alta disponibilidade.</p>
+<h2 id="proximos-topicos">Próximos Tópicos</h2>
+<h3 id="pods-e-nodes"><a href="pods_and_nodes/">Pods e Nodes</a></h3>
+<h3 id="kubectl"><a href="kubectl/">Kubectl</a></h3>
+<h3 id="configmap"><a href="configMap/">ConfigMap</a></h3>
+<h3 id="probes"><a href="probes/">Probes</a></h3>
+<h3 id="replicaset-e-deployment"><a href="replicaSet_and_deployment/">ReplicaSet e Deployment</a></h3>
+<h3 id="servicos"><a href="services/">Serviços</a></h3>
+<h3 id="armazenamento"><a href="storage/">Armazenamento</a></h3>
+<h3 id="horizontal-pod-autoscaler-hpa"><a href="horizontal_pod_autoscaler_HPA/">Horizontal Pod Autoscaler (HPA)</a></h3></div>
             </div>
         </div>
 
